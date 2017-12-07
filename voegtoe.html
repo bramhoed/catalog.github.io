@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latent Talent Catalogus</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="catstyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div class = "navbar">
+    <div class = "container">
+      De Latent Talent</br>Cabaret Catalogus </br><a href = "htttps://www.latenttalent.net"><img src="http://www.ssre.nl/sites/default/files/Pagina/LatentTalentlogo.jpg" alt="Het Dispuut Latent Talent"></a>
+    </div>
+
+    <div class = "buttons">
+      <a class="btn1" href="catalogus.html" style="text-decoration: none">Catalogus</a> -
+      <a class="btn2" href="voegtoe.html" style="text-decoration: none">>Voeg attribuut toe<</a>
+    </div>
+  </div></br>
+
+  <div class = "introtxt">
+      <h3>Geachte lezer,</br>welkom op de site van de catalogus van alle attributen voor Cabaret die in het bezit zijn van Het Dispuut Latent Talent.</h3>
+  </div>
+
+  <div id = "introbtn">
+    <button type = "button">Verberg/toon tekst</button>
+  </div>
+
+  <div class="main">
+      <div class="co">
+          <div class="voegattoe">
+              <h2> Voeg een attribuut toe:</h2></br>
+              <form>
+                  <textarea id="attribuutNaam" placeholder="Naam van het attribuut" rows="1"></textarea></br>
+                  <textarea id="attribuutOmschrijving" placeholder="Omschrijf het attribuut" rows="5"></textarea></br>
+                  <select id="soortAttribuut" title="soortAttribuut">
+                      <option value="Trui">Trui</option>
+                      <option value="Shirt">Shirt</option>
+                      <option value="Schoeisel">Schoeisel</option>
+                      <option value="Accessoire">Accessoire</option>
+                      <option value="Broek">Broek</option>
+                      <option value="Jas">Jas</option>
+                  </select></br>
+                  <select id="aantalAttribuut" title="aantalAttribuut">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select></br>
+                  <div>
+                      <input class="button" id="voegToe" type="button" value="Voeg dit attribuut toe" onClick = "prout()">
+                  </div>
+              </form>
+          </div>
+      </div></br>
+
+      <div class="attributen">
+          <span id = "result"></span>
+
+      </div>
+    </div>
+    <div class ="footer"><p>Onderhouden door de Internerdcie van Het Dispuut Latent Talent</p></div>
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/javacat.js"></script>
+  <script>
+    function prout() {
+    document.getElementById("result").innerHTML = "Soort: " + document.getElementById('soortAttribuut').value + "</br>Aantal: " + document.getElementById('aantalAttribuut').value + "</br>Naam: " + document.getElementById('attribuutNaam').value + "</br> Omschrijving: " + document.getElementById('attribuutOmschrijving').value;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.1s; }
+
+body {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 18px;
+  color: #303030;
+  background-image: url(https://www.arum.co.uk/wp-content/uploads/2013/11/site-background.jpg);
+  background-repeat: repeat;
+ }
+
+.navbar
+  {
+  text-transform: uppercase;
+  }
+
+.container{
+  float: right;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  overflow: hidden
+}
+
+.buttons{
+  position: fixed;
+  top: 0;
+  font-size: 25px;
+  background-color: #FFFF00;
+  float: left;
+  border: 2px solid #FF0000;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.introtxt{
+  float: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+}
+
+.btn-active{
+  background-color: #FAFAD2;
+  font-size: 29px;
+}
+
+.container{
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+.container:hover {
+    font-size: 20px;
+}
+.main{
+  margin-left: 30%;
+  float: left;
+  text-align: center;
+}
+
+.footer{
+  background-color: #FAFAD2;
+  position: fixed;
+  bottom: 0;
+}
+
+#introbtn{
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+#box1{
+  margin-left: 5%;
+  float:left;
+  border: 2px solid #FF0000;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+#box2{
+  margin-left: 5%;
+  float:left;
+  border: 2px solid #FFFF00;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+#box3{
+  margin-left: 5%;
+  float:left;
+  border: 2px solid blue;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+
+}
+
+#result{
+  margin-left: 5%;
+  float:left;
+  border: 2px solid #FF0000;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+#attribuutNaam{
+  height: 50px;
+  width: 300px;
+}
+#attribuutOmschrijving{
+  height: 100px;
+  width: 400px;
+}
+#soortAttribuut{
+  width: 150px;
+  height: 25px;
+}
+#aantalAttribuut{
+  height: 25px;
+  text-align: left;
+}
